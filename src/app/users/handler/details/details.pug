@@ -1,0 +1,15 @@
+h2 Utilisateur n°{{ user.id }}
+div
+  p
+    i.ui-icon( class = "fa fa-user-circle-o" )
+    span {{ user.name }}
+  p
+    i.ui-icon( class = "fa fa-envelope" )
+    span {{ user.email }}
+  p
+    i.ui-icon( class = "fa fa-map-marker" )
+    span {{ user.address.street }}, {{ user.address.suite }}, {{ user.address.city }}, {{ user.address.zipcode }}
+  p
+    i.ui-icon( class = "fa fa-phone" )
+    span {{ user.phone }}
+  button( type = "button", class = "btn btn-primary", data-dismiss = "modal", routerLink = "/" ) Retour à la liste

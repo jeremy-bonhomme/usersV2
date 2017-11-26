@@ -1,0 +1,5 @@
+
+<div class="list-group">
+  <input class="form-control" placeholder="Filtrer les utilisateurs par nom" type="text" [(ngModel)]="search"/><a class="list-group-item list-group-item-action" *ngFor="let user of users | appFilter:search; let i = index" [routerLink]="user.id">{{ user.name }}</a>
+</div>
+<div class="alert alert-warning" *ngIf="_userS?.error">L'API Jasonplaceholder retourne une erreur {{ _userS?.error | async }}</div>

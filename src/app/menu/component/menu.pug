@@ -1,0 +1,7 @@
+nav( class = "navbar navbar-light navbar-toggleable-md bg-faded navbar-margin" )
+  button( (click) = "toggleNavbar()", type = "button", class = "navbar-toggler navbar-toggler-right" )
+    span( class = "navbar-toggler-icon" )
+  a( class = "navbar-brand", href = "/" ): img( class = "", src = "assets/logo.png" )
+  div( [class.collapse] = "isCollapsed", id = "navbar", class = "navbar-collapse" )
+    div( class = "nav navbar-nav mr-auto" )
+      a( class = "nav-item nav-link", href = "/" ) Accueil

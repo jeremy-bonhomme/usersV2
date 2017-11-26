@@ -1,0 +1,18 @@
+/* ========================================================================
+
+  USER DETAILS
+
+======================================================================== */
+
+.modal.is-open {
+  background-color: rgba( 150, 150, 150, 0.8 );
+  display: block;
+}
+
+.modal-dialog {
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY( -50% );
+}
+
+.ui-icon { margin-right: 20px; }
