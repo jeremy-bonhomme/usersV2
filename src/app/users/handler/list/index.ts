@@ -12,7 +12,7 @@ export class UserListC implements OnInit {
   public search: string = '';
   public users: Array<UserM> = [];
 
-  public constructor( protected _userS: UserS ) {}
+  public constructor( public _userS: UserS ) {}
 
   public ngOnInit(): void {
     this._userS.users.subscribe( ( users: UserM[] ) => {
